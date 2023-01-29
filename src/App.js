@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Card from './component/Card';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+       <Card
+        image="https://picsum.photos/300/400"
+        imageTitle="Example Image"
+        title="White traditional dress"
+        price="$3.99"
+      />
+      <Card
+        image="https://picsum.photos/300/400"
+        imageTitle="Example Image"
+        title="Long sleeve jacket"
+        
+        price="$3.99"
+      />
+      <Card
+        image="https://picsum.photos/300/400"
+        imageTitle="Example Image"
+        title="hush Pupples"
+        
+        price="$3.99"
+      />
+      <Card
+        image="https://picsum.photos/300/400"
+        imageTitle="Example Image"
+        title="Athens skirt"
+        
+        price="$3.99"
+      />
+     
     </div>
-  );
+  )
 }
 
 export default App;
